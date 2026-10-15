@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Capacitor } from '@capacitor/core';
 import {
   ArrowLeft,
   ArrowRight,
@@ -600,7 +601,8 @@ function App() {
     localStorage.setItem('petal_saved', JSON.stringify(saved));
   }, [saved]);
   useEffect(() => {
-    if ('serviceWorker' in navigator)
+    // Web only: the iPhone app bundles everything and needs no service worker.
+    if (!Capacitor.isNativePlatform() && 'serviceWorker' in navigator)
       navigator.serviceWorker.register('./sw.js').catch(() => {});
   }, []);
   const navigate = (next: string) => {

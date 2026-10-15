@@ -4,7 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: 'DM Sans Variable', system-ui, sans-serif;
+  --font-body: 'DM Sans Variable', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-body);
   color: #283b34;
   background: #fffdf9;
   font-synthesis: none;
@@ -55,7 +59,7 @@ h3 {
 }
 h1,
 h2 {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
 }
 h2 {
   font-size: 32px;
@@ -170,7 +174,7 @@ p {
   margin-bottom: 17px;
 }
 .side-support strong {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 21px;
 }
 .side-support p {
@@ -660,7 +664,7 @@ p {
   padding: 0 5px;
 }
 .lesson-card h3 {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 20px;
   line-height: 1.23;
   color: #375446;
@@ -711,7 +715,7 @@ p {
   font-size: 33px;
 }
 .home-note strong {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   color: #4e6456;
   font-size: 19px;
 }
@@ -781,17 +785,18 @@ p {
   display: flex;
   align-items: center;
   gap: 13px;
-  padding: 15px 17px;
+  padding: 3px 17px;
   color: #aeb7a9;
   margin-bottom: 18px;
 }
 .search-box input {
+  min-height: 44px;
   border: 0;
   outline: 0;
   flex: 1;
   min-width: 0;
   color: #3f5c4c;
-  font-size: 13px;
+  font-size: 16px;
 }
 .search-box input::placeholder {
   color: #b7b9b1;
@@ -1108,7 +1113,7 @@ p {
   letter-spacing: 0.09em;
 }
 .product-card h3 {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 20px;
   color: #435e4d;
   margin: 9px 0 7px;
@@ -1293,7 +1298,7 @@ p {
   color: #a4b671;
 }
 .care-calm h3 {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   color: #4b644c;
   margin: 14px 0 8px;
 }
@@ -1352,7 +1357,7 @@ p {
   flex-shrink: 0;
 }
 .urgent-panel h3 {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 21px;
   color: #8a605b;
   margin: 0 0 9px;
@@ -1373,7 +1378,7 @@ p {
   color: #bc919c;
 }
 .empty-state h3 {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 26px;
   color: #405d4c;
   margin: 11px 0;
@@ -1384,7 +1389,7 @@ p {
   margin-bottom: 24px;
 }
 .empty-art {
-  font-family: 'Fraunces Variable', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 67px;
   color: #e4a4b5;
 }
@@ -2027,5 +2032,62 @@ p {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+/* iPhone: respect the notch, home bar and landscape edges (all 0 on the web) */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+@media (max-width: 760px) {
+  .topbar {
+    height: calc(62px + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
+  }
+  .mobile-menu {
+    top: calc(65px + env(safe-area-inset-top));
+  }
+  .main-column {
+    padding-bottom: calc(75px + env(safe-area-inset-bottom));
+  }
+  /* Tap targets: at least 44 x 44 points */
+  .top-icon,
+  .save-button,
+  .modal-close,
+  .search-box button {
+    width: 44px;
+    height: 44px;
+  }
+  .top-icon {
+    margin-right: -10px;
+  }
+  .save-button {
+    margin: -6px -6px 0 0;
+  }
+  .mobile-brand,
+  .inline-go,
+  .quiet-button,
+  .view-all,
+  .back-link,
+  .reset-check,
+  .footer button,
+  .care-side button,
+  .mobile-menu button,
+  .quiz-options button,
+  .outline-danger,
+  .danger-button,
+  .faq-item button,
+  .bottom-nav button {
+    min-height: 44px;
+  }
+  .inline-go {
+    align-items: center;
+  }
+  .bottom-nav button {
+    justify-content: center;
+  }
+  .bottom-nav {
+    padding-top: 6px;
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
   }
 }
