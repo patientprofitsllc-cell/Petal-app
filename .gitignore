@@ -3,3 +3,4 @@ dist
 .claude
 ios
 store/screenshots
+store/*.zip
