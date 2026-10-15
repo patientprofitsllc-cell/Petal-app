@@ -678,6 +678,7 @@ p {
   margin-bottom: 22px;
 }
 .inline-go {
+  order: 2;
   margin-top: auto;
   text-align: left;
   font-size: 12px;
@@ -689,18 +690,17 @@ p {
   width: fit-content;
 }
 .done-tag {
-  position: absolute;
-  top: 34px;
-  right: 15px;
+  order: 1;
   display: flex;
   gap: 3px;
   align-items: center;
+  width: fit-content;
   font-size: 9px;
   color: #58916c;
   background: #eaf6ec;
   padding: 5px;
   border-radius: 7px;
-  transform: translateY(20px);
+  margin-bottom: 12px;
 }
 .home-note {
   margin: 36px 5.8% 0;
