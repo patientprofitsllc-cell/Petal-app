@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT,WONK@9..144,500,20,1;9..144,600,20,1;9..144,700,20,1&display=swap');
+@import '@fontsource-variable/dm-sans/wght.css';
+@import '@fontsource-variable/fraunces/opsz.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'DM Sans Variable', system-ui, sans-serif;
   color: #283b34;
   background: #fffdf9;
   font-synthesis: none;
@@ -54,7 +55,7 @@ h3 {
 }
 h1,
 h2 {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
 }
 h2 {
   font-size: 32px;
@@ -169,7 +170,7 @@ p {
   margin-bottom: 17px;
 }
 .side-support strong {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   font-size: 21px;
 }
 .side-support p {
@@ -659,7 +660,7 @@ p {
   padding: 0 5px;
 }
 .lesson-card h3 {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   font-size: 20px;
   line-height: 1.23;
   color: #375446;
@@ -710,7 +711,7 @@ p {
   font-size: 33px;
 }
 .home-note strong {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   color: #4e6456;
   font-size: 19px;
 }
@@ -1107,7 +1108,7 @@ p {
   letter-spacing: 0.09em;
 }
 .product-card h3 {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   font-size: 20px;
   color: #435e4d;
   margin: 9px 0 7px;
@@ -1292,7 +1293,7 @@ p {
   color: #a4b671;
 }
 .care-calm h3 {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   color: #4b644c;
   margin: 14px 0 8px;
 }
@@ -1351,7 +1352,7 @@ p {
   flex-shrink: 0;
 }
 .urgent-panel h3 {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   font-size: 21px;
   color: #8a605b;
   margin: 0 0 9px;
@@ -1372,7 +1373,7 @@ p {
   color: #bc919c;
 }
 .empty-state h3 {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   font-size: 26px;
   color: #405d4c;
   margin: 11px 0;
@@ -1383,7 +1384,7 @@ p {
   margin-bottom: 24px;
 }
 .empty-art {
-  font-family: Fraunces, Georgia, serif;
+  font-family: 'Fraunces Variable', Georgia, serif;
   font-size: 67px;
   color: #e4a4b5;
 }

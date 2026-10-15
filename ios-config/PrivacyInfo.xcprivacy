@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Copy this file to ios/App/App/PrivacyInfo.xcprivacy in Phase 2 and add it to
+  the App target in Xcode (the cloud build does this step).
+  It matches the code: Petal collects no data, does no tracking, and its own
+  code calls no "required reason" APIs. Capacitor and its plugins ship their own
+  manifests. Re-check this file whenever a plugin or any new data use is added.
+-->
+<plist version="1.0">
+<dict>
+  <key>NSPrivacyTracking</key>
+  <false/>
+  <key>NSPrivacyTrackingDomains</key>
+  <array/>
+  <key>NSPrivacyCollectedDataTypes</key>
+  <array/>
+  <key>NSPrivacyAccessedAPITypes</key>
+  <array/>
+</dict>
+</plist>

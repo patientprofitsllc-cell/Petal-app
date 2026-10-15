@@ -1,4 +1,4 @@
-# Petal — native app release handoff
+# Petal: native app release handoff
 Petal is a mobile-first, responsive PWA suitable for usability testing and subsequent native packaging. It is not yet an App Store / Google Play signed binary. Public site URL comes from AppDeploy.
 
 ## iOS / Android packaging
@@ -14,10 +14,10 @@ Petal is a mobile-first, responsive PWA suitable for usability testing and subse
 10. Apple guideline 4.2 requires useful app-specific functionality beyond a wrapped website. Test full native experience, and consider adding native accessibility, haptic guidance, locally stored reminder opt-ins or educational interactions if needed; no acceptance guarantee.
 
 ## Suggested store listing draft
-Name: Petal — Period Guide
+Name: Petal: Period Guide
 Subtitle: Period care, made simple
 Summary: Step-by-step, judgment-free lessons for first periods, hygiene, products, school leaks, and comfort.
-Description: Meet Petal, a gentle guide to periods for teens and young women. Learn with interactive, bite-sized walkthroughs. Compare pads, period underwear, tampons and cups; build simple hygiene habits; find comforting answers to common questions. No account required. No cycle tracking. Save lessons privately on your device.
+Description: Meet Petal, a gentle guide to periods for teens and young women. Learn with interactive, bite-sized walkthroughs. Compare pads, panty liners, period underwear, tampons and cups; build simple hygiene habits; find comforting answers to common questions. No account required. No cycle tracking. Save lessons privately on your device.
 
 ## Editorial & privacy notes
 - Do not represent this content as medical diagnosis. Refer to CDC, ACOG and FDA links in app.

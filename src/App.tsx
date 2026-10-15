@@ -7,25 +7,19 @@ import {
   Check,
   CheckCircle2,
   ChevronRight,
-  CircleHelp,
   Clock3,
-  Droplets,
   Flower2,
   Heart,
   Home,
   Info,
-  Leaf,
   Menu,
-  Package,
   RotateCcw,
   Search,
   ShieldCheck,
   ShoppingBag,
   Sparkles,
-  Star,
   Sun,
   Trash2,
-  Waves,
   X,
 } from 'lucide-react';
 
@@ -223,7 +217,7 @@ const lessons: Lesson[] = [
       },
       {
         title: 'Wash the outside only',
-        text: 'In the shower, gently rinse the vulva—the skin on the outside—with lukewarm water. If you use soap, choose a mild unscented one only for the outer skin.',
+        text: 'In the shower, gently rinse the vulva (the skin on the outside) with lukewarm water. If you use soap, choose a mild unscented one only for the outer skin.',
         tip: 'The vagina cleans itself. Never wash inside it or douche.',
         moment: 'You are taking a shower during your period.',
         emoji: '🚿',
@@ -493,7 +487,7 @@ const faqs = [
   },
   {
     q: 'Do I have to use tampons?',
-    a: 'Not at all. Pads, period underwear, tampons, and cups are options—not requirements. The best product is one you can use safely and comfortably.',
+    a: 'Not at all. Pads, period underwear, tampons, and cups are options, not requirements. The best product is one you can use safely and comfortably.',
   },
   {
     q: 'Can I shower during my period?',
@@ -975,7 +969,7 @@ function App() {
                   <strong>A reminder from us to you</strong>
                   <p>
                     Everyone's body is different. There isn't one perfect way to
-                    have a period—and you never have to figure it out alone.
+                    have a period, and you never have to figure it out alone.
                   </p>
                 </div>
                 <span>♡</span>
@@ -1140,7 +1134,7 @@ function App() {
                     THE NO-PRESSURE PRODUCT GUIDE ✨
                   </span>
                   <h2>What sounds like you?</h2>
-                  <p>Choose a moment. We'll show you options—not rules.</p>
+                  <p>Choose a moment. We'll show you options, not rules.</p>
                 </div>
                 <div className="quiz-options">
                   {Object.keys(quizFits).map(option => (
@@ -1411,11 +1405,16 @@ function App() {
                 <h2>Your body, your information.</h2>
                 <p>
                   Petal does not require an account or ask for dates of your
-                  period, location, photos, or medical details. This version has
-                  no ads or third-party analytics. Lesson completion and saved
-                  lessons are stored only in your current browser using local
-                  storage. Your checklist is only held during this visit. The
-                  hosting service may process standard technical request logs.
+                  period, location, photos, or medical details. It has no ads,
+                  no analytics, and no tracking. Lesson completion and saved
+                  lessons are stored only on this device, in the app's local
+                  storage, and are never sent anywhere. Your checklist is only
+                  held until you close the app. In the iPhone app, nothing
+                  leaves your device. If you use the website version, the
+                  company that hosts the website may keep standard technical
+                  request logs, such as your IP address and the time of the
+                  visit. Deleting the app or tapping the button below removes
+                  everything Petal has saved.
                 </p>
                 <button
                   className="outline-danger"
@@ -1429,9 +1428,10 @@ function App() {
                 <h2>Trusted guidance</h2>
                 <p>
                   Health information here is for education, not a diagnosis or a
-                  substitute for a doctor. Product instructions differ, so
-                  always read the manufacturer's directions. Content based on
-                  public guidance from:
+                  substitute for a doctor. Petal is not a medical device. It
+                  does not diagnose, treat, or predict anything. Product
+                  instructions differ, so always read the manufacturer's
+                  directions. Content is based on public guidance from:
                 </p>
                 <div className="sources-list">
                   {sourceLinks.map(item => (
@@ -1447,8 +1447,7 @@ function App() {
                   ))}
                 </div>
                 <p className="last-reviewed">
-                  Editorial content prepared October 2026. Clinical review
-                  should be completed before native store submission.
+                  Content last updated October 2026.
                 </p>
               </div>
               <div className="privacy-card">
