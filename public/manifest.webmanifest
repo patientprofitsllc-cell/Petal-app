@@ -1,0 +1,18 @@
+{
+  "name": "Petal — Your Period Guide",
+  "short_name": "Petal",
+  "description": "Calm, step-by-step menstrual education for teens and young women.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffdf9",
+  "theme_color": "#fce7e6",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

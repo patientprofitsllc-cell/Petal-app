@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Finish and retain a first period tutorial",
+    "sanity": true,
+    "viewport": "mobile",
+    "covers": [
+      "interactive guided steps",
+      "lesson completion",
+      "learning progress persistence",
+      "mobile navigation"
+    ],
+    "description": "A reader completes the first-period walkthrough, returns to lessons, and sees progress after reload.",
+    "steps": [
+      "Open the My period just started card on the home screen",
+      "Advance through every step by choosing Got it, next step and then Finish this lesson",
+      "Verify that My first period. Now what? shows Completed in Lessons",
+      "Reload the app and revisit Home"
+    ],
+    "expected": "The first-period lesson remains completed and the home progress shows at least one finished lesson."
+  },
+  {
+    "name": "Find a product and open its walkthrough",
+    "viewport": "desktop",
+    "covers": [
+      "product discovery quiz",
+      "product detail explanation",
+      "safe tampon instructions",
+      "link from product to tutorial"
+    ],
+    "description": "Product guidance shows relevant options, changing intervals, and a working route to a practical lesson.",
+    "steps": [
+      "Open Products and choose Swimming or sports in the product guide",
+      "Open the Tampons product card",
+      "Check that the detail states change every 4–8 hours and never beyond 8 hours",
+      "Choose Show me the step-by-step"
+    ],
+    "expected": "The Tampons tutorial opens at step 1 with safety-first instructions, and the product selector shows an appropriate recommendation."
+  },
+  {
+    "name": "Use and reset the care routine",
+    "viewport": "mobile",
+    "covers": [
+      "hygiene checklist",
+      "checklist completion state",
+      "checklist reset",
+      "FAQ disclosure",
+      "medical warning signs"
+    ],
+    "description": "A reader can interact with the care checklist, reset it, and access the relevant FAQ and medical guidance.",
+    "steps": [
+      "Open My care from bottom navigation",
+      "Select all five routine rows",
+      "Check that the routine completion message appears",
+      "Choose Reset checklist",
+      "Expand When is bleeding too heavy?"
+    ],
+    "expected": "Checklist resets to 0/5, FAQ answer is visible, and the When to get medical help guidance is present."
+  },
+  {
+    "name": "Bookmark and remove a lesson",
+    "viewport": "desktop",
+    "covers": [
+      "saving lessons",
+      "removing bookmarks",
+      "saved lesson persistence",
+      "empty state"
+    ],
+    "description": "A reader bookmarks a lesson, finds it under Saved, and removes it.",
+    "steps": [
+      "Open Lessons and save How to use a pad using the bookmark button",
+      "Open Saved and verify How to use a pad is present",
+      "Reload the app and open Saved again",
+      "Use the bookmark button on the saved lesson to remove it"
+    ],
+    "expected": "The Saved page displays its empty state after the last bookmark is removed, with no saved lesson present."
+  },
+  {
+    "name": "Cancel and confirm clearing personal progress",
+    "viewport": "desktop",
+    "covers": [
+      "privacy explanation",
+      "destructive action confirmation",
+      "cancellation guardrail",
+      "data removal"
+    ],
+    "description": "A reader can reject clearing data, then confirm that completed lessons and bookmarks are erased.",
+    "setup": [
+      "Finish the How to use a pad tutorial using all its steps and bookmark My first period. Now what? from Lessons"
+    ],
+    "steps": [
+      "Open Privacy & sources and choose Clear saved lessons & progress",
+      "Choose Keep my progress",
+      "Open Saved to confirm the bookmark is still present",
+      "Return to Privacy & sources and choose Clear saved lessons & progress again",
+      "Choose Yes, clear it",
+      "Open Saved and Home to check state"
+    ],
+    "expected": "The first cancellation retains saved lessons; final confirmation clears bookmarks and learning progress, returning the progress indicator to 0%."
+  }
+]
